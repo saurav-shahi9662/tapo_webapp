@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Tapo L535E Bulb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .on {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .off {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Control Your Tapo L535E Bulb</h1>
+
+    <!-- Form to turn the light on -->
+    <form action="/turn_on" method="POST">
+        <button class="btn on" type="submit">Turn On</button>
+    </form>
+
+    <!-- Form to turn the light off -->
+    <form action="/turn_off" method="POST">
+        <button class="btn off" type="submit">Turn Off</button>
+    </form>
+
+</body>
+</html>
